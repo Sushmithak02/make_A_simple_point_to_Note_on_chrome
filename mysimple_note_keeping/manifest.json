@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Welocome back the User",
+  "version": "0.1",
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "pencil.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ],
+
+  "permissions": ["storage", "tabs"]
+}
